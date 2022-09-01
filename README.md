@@ -1,4 +1,4 @@
 # fictional university wp theme
 
-A fictional university wordpress theme. The theme is modified to include my own design. The base theme is  from 
+A fictional university wordpress theme. The theme is modified to include my own design. The base theme is from udemy course
 [Become a WordPress Developer: Unlocking Power With Code](https://www.udemy.com/course/become-a-wordpress-developer-php-javascript/)
