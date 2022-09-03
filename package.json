@@ -1,0 +1,19 @@
+{
+  "name": "fictional-university-wp-theme",
+  "version": "1.0.0",
+  "description": "A fictional university wordpress theme. The theme is modified to include my own design. The base theme is from udemy course\r [Become a WordPress Developer: Unlocking Power With Code](https://www.udemy.com/course/become-a-wordpress-developer-php-javascript/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnPevien/fictional-university-wp-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnPevien/fictional-university-wp-theme/issues"
+  },
+  "homepage": "https://github.com/JohnPevien/fictional-university-wp-theme#readme"
+}
