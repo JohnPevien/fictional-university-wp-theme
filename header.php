@@ -9,8 +9,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body>
-
+<body class="<?php body_class() ?>">
   <header class="site-header">
     <div class="container">
       <h1 class="school-logo-text float-left">
