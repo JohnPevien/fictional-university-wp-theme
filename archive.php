@@ -22,7 +22,9 @@ get_header();
       ?>
     </h1>
     <div class="page-banner__intro">
-      <p>Keep up with our latest news</p>
+      <p><?php
+        the_archive_description();
+      ?></p>
     </div>
   </div>
 </div>
