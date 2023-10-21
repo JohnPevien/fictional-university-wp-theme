@@ -20,7 +20,7 @@ get_header();
 
 <div class="container container--narrow page-section">
   <div class="metabox metabox--position-up metabox--with-home-link">
-    <p><a class="metabox__blog-home-link" href="<?php echo site_url('/blog');?>"><i class="fa fa-home"
+    <p><a class="metabox__blog-home-link" href="<?php echo get_post_type_archive_link('event');?>"><i class="fa fa-home"
           aria-hidden="true"></i> Events Home
       </a>
       <span class="metabox__main">
