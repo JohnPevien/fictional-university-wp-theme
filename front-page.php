@@ -27,7 +27,7 @@ get_header();
           'order' => 'ASC',
           'meta_query' => array(
             array(
-              'key' => event_date,
+              'key' => 'event_date',
               'compare' => '>=',
               'value' => date('Ymd'),
               'type' => 'numeric'
