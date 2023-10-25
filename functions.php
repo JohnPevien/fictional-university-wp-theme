@@ -67,7 +67,7 @@ function university_adjust_queries($query){
     $query->set('order', 'ASC'); 
     $query->set('meta_query', array(
             array(
-              'key' => event_date,
+              'key' => 'event_date',
               'compare' => '>=',
               'value' => date('Ymd'),
               'type' => 'numeric'
