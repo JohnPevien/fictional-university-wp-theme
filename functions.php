@@ -46,32 +46,17 @@ add_action('init', 'university_post_types');
 
 // Query filter for events archive
 function university_adjust_queries($query){
-
-  /*
-  'posts_per_page' => 2,
-          'post_type' => 'event',
-          'meta_key' => 'event_date',
-          'orderby' => 'meta_value_num',
-          'order' => 'ASC',
-          'meta_query' => array(
-            array(
-              'key' => event_date,
-              'compare' => '>=',
-              'value' => date('Ymd'),
-              'type' => 'numeric'
-            ))
-  */
   if(!is_admin() AND is_post_type_archive('event') AND $query->is_main_query()){
     $query->set('meta_key', 'event_date');
     $query->set('orderby', 'meta_value_num');
     $query->set('order', 'ASC'); 
-    $query->set('meta_query', array(
-            array(
-              'key' => 'event_date',
-              'compare' => '>=',
-              'value' => date('Ymd'),
-              'type' => 'numeric'
-            ))); 
+    // $query->set('meta_query', array(
+    //         array(
+    //           'key' => 'event_date',
+    //           'compare' => '>=',
+    //           'value' => date('Ymd'),
+    //           'type' => 'numeric'
+    //         ))); 
   }
 }
 
