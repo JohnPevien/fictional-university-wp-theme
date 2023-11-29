@@ -62,9 +62,7 @@ function university_post_types()
   register_post_type('professor', array(
     'show_in_rest' => true,
     'supports' => array('title', 'editor', 'excerpt', 'custom-fields'),
-    'rewrite' => array('slug' => 'professors'),
     'public' => true,
-    'has_archive' => true,
     'show_in_rest' => true,
     'labels' => array(
       'name' => 'Professors',
