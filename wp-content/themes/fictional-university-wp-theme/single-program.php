@@ -52,9 +52,6 @@ get_header();
         ));
 
         if($homepageEvents->have_posts()){
-
-          
-        }
           
         echo '<hr class="section-break">';
         echo '<h2 class="headline headline--medium">Upcoming ' . get_the_title() . ' Events</h2>';
@@ -90,7 +87,7 @@ get_header();
       </p>
     </div>
   </div>
-  <?php }
+  <?php }}
         wp_reset_postdata();  // Cleaning up after the query
       ?>
 </div>
