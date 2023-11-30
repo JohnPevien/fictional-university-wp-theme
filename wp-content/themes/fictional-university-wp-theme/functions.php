@@ -14,6 +14,7 @@ add_action('wp_enqueue_scripts', 'university_files');
 function university_features()
 {
   add_theme_support('title-tag');
+  add_theme_support('post-thumbnails');
   register_nav_menu('headerMenuLocation', 'Header Menu Location');
   register_nav_menu('footerLocationOne', 'Footer Location One');
   register_nav_menu('footerLocationTwo', 'Footer Location Two');
@@ -59,9 +60,10 @@ function university_post_types()
     'menu_icon' => 'dashicons-superhero', 
   ));
 
+  // professor post type
   register_post_type('professor', array(
     'show_in_rest' => true,
-    'supports' => array('title', 'editor', 'excerpt', 'custom-fields'),
+    'supports' => array('title', 'editor', 'custom-fields','thumbnail'),
     'public' => true,
     'show_in_rest' => true,
     'labels' => array(
