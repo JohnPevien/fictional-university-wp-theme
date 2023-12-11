@@ -6,7 +6,8 @@ function pageBanner(){
 
 <div class="page-banner">
   <div class="page-banner__bg-image"
-    style="background-image: url(<?php echo get_theme_file_uri('/images/ocean.jpg') ?>);"></div>
+    style="background-image: url(<?php $pageBannerImage = get_field('page_banner_background_image'); echo $pageBannerImage['sizes']['pageBanner'] ?>);">
+  </div>
   <div class="page-banner__content container container--narrow">
     <h1 class="page-banner__title">
       <?php the_title(); ?>
@@ -37,6 +38,7 @@ function university_features()
   add_theme_support('post-thumbnails');
   add_image_size('professorLandscape', 400, 260, true);
   add_image_size('professorPortrait', 480, 650, true);
+  add_image_size('pageBanner', 1500, 350, true);
   register_nav_menu('headerMenuLocation', 'Header Menu Location');
   register_nav_menu('footerLocationOne', 'Footer Location One');
   register_nav_menu('footerLocationTwo', 'Footer Location Two');
