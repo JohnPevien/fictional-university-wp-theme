@@ -1,5 +1,25 @@
 <?php
 
+function pageBanner(){
+   
+  ?>
+
+<div class="page-banner">
+  <div class="page-banner__bg-image"
+    style="background-image: url(<?php echo get_theme_file_uri('/images/ocean.jpg') ?>);"></div>
+  <div class="page-banner__content container container--narrow">
+    <h1 class="page-banner__title">
+      <?php the_title(); ?>
+    </h1>
+    <div class="page-banner__intro">
+      <p>DONT FORGET TO REPLACE ME LATER</p>
+    </div>
+  </div>
+</div>
+
+<?php 
+}
+
 function university_files()
 {
   wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
