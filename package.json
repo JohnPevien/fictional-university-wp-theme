@@ -4,6 +4,10 @@
   "description": "A fictional university wordpress theme. The theme is modified to include my own design. The base theme is from udemy course\r [Become a WordPress Developer: Unlocking Power With Code](https://www.udemy.com/course/become-a-wordpress-developer-php-javascript/)",
   "main": "index.js",
   "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "dev": "wp-scripts start",
+    "devFast": "wp-scripts start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,6 +16,12 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "@wordpress/scripts": "*",
+    "axios": "^0.21.1",
+    "normalize.css": "^8.0.1"
+  },
   "bugs": {
     "url": "https://github.com/JohnPevien/fictional-university-wp-theme/issues"
   },
