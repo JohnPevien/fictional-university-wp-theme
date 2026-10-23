@@ -21,14 +21,14 @@ function pageBanner($args = NULL){
   ?>
 
 <div class="page-banner">
-  <div class="page-banner__bg-image" style="background-image: url(<?php echo $args['photo'] ?>);">
+  <div class="page-banner__bg-image" style="background-image: url(<?php echo esc_url($args['photo']) ?>);">
   </div>
   <div class="page-banner__content container container--narrow">
     <h1 class="page-banner__title">
-      <?php echo $args['title']; ?>
+      <?php echo esc_html($args['title']); ?>
     </h1>
     <div class="page-banner__intro">
-      <p><?php echo $args['subtitle']; ?></p>
+      <p><?php echo esc_html($args['subtitle']); ?></p>
     </div>
   </div>
 </div>
